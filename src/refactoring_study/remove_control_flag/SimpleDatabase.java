@@ -6,41 +6,27 @@ import java.io.Reader;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class SimpleDatabase {
 	private Map<String, String> map = new HashMap<>();
 
-	public SimpleDatabase(Reader r) throws IOException {
-		BufferedReader reader = new BufferedReader(r);
-		boolean reading = false;
+    private static Pattern pattern = Pattern.compile("([^=]+)=(.*)");
 
-		String line;
-		while (!reading) {
-			line = reader.readLine();
-			if (line == null) {
-				reading = true;
-			} else {
-				boolean scanningKey = true;
-				StringBuffer keyBuffer = new StringBuffer();
-				StringBuffer valueBuffer = new StringBuffer();
-				for (int i = 0; i < line.length(); i++) {
-					char c = line.charAt(i);
-					if (scanningKey) {
-						if (c == '=') {
-							scanningKey = false;
-						} else {
-							keyBuffer.append(c);
-						}
-					} else {
-						valueBuffer.append(c);
-					}
-				}
-				String key = keyBuffer.toString();
-				String value = valueBuffer.toString();
-				map.put(key, value);
-			} // end if-else
-		} // end while
-	}// end contructor
+    public SimpleDatabase(Reader r) throws IOException {
+        BufferedReader reader = new BufferedReader(r);
+        String line;
+        
+        while ((line = reader.readLine()) != null) {
+            Matcher matcher = pattern.matcher(line);
+            if (matcher.matches()) {
+                String key = matcher.group(1);
+                String value = matcher.group(2);
+                map.put(key, value);
+            }
+        }
+    }
 
 	public void putValue(String key, String value) {
 		map.put(key, value);
