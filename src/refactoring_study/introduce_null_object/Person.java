@@ -9,17 +9,14 @@ public class Person {
 		this.mail = mail;
 	}
 
+
 	public Person(Label name) {
-		this(name, null);
+		this(name, Label.newNull());
 	}
 
 	public void display() {
-		if (name != null) {
-			name.display();
-		}
-		if (mail != null) {
-			mail.display();
-		}
+		name.display();
+		mail.display();
 	}
 
 	public Label getName() {
@@ -32,8 +29,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return String.format("Person [name=%s, mail=%s]", name == null ? "\"(none)\"" : name,
-				mail == null ? "\"(none)\"" : mail);
+		return String.format("Person [name=%s, mail=%s]", name, mail);
 	}
 
 }

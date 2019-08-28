@@ -10,8 +10,13 @@ public class Main {
 
 		for (Person p : people) {
 			System.out.println(p);
+//			if (!p.getMail().isNull()) {
+//				System.out.println(p.getName());
+//			}
 			p.display();
 			System.out.println();
 		}
+		
+		System.out.println(people[2].getMail().isNull() + " : " + people[2].getName().isNull());
 	}
 }
