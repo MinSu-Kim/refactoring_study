@@ -3,11 +3,14 @@ package refactoring_study.extract_superclass;
 public class Main {
 
     public static void main(String[] args) {
+        Media music = new Music("좋니");
+        Media video = new Video("효리네 민박");
+        
         Player musicPlayer = new Player();
-        musicPlayer.setCurrentMedia(true);
+        musicPlayer.setMedia(music);
         
         Player videoPlayer = new Player();
-        videoPlayer.setCurrentMedia(false);
+        videoPlayer.setMedia(video);
         
         play(musicPlayer);
         play(videoPlayer);
