@@ -4,15 +4,13 @@ public class Book {
 	private String title;
 	private String isbn;
 	private String price;
-	private String authorName;
-	private String authorMail;
+	private Author author;
 
 	public Book(String title, String isbn, String price, String authorName, String authorMail) {
 		this.title = title;
 		this.isbn = isbn;
 		this.price = price;
-		this.authorName = authorName;
-		this.authorMail = authorMail;
+		this.author = new Author(authorName, authorMail);
 	}
 
 	public String getTitle() {
@@ -40,23 +38,23 @@ public class Book {
 	}
 
 	public String getAuthorName() {
-		return authorName;
+		return author.getAuthorName();
 	}
 
 	public void setAuthorName(String authorName) {
-		this.authorName = authorName;
+		this.author.setAuthorName(authorName);
 	}
 
 	public String getAuthorMail() {
-		return authorMail;
+		return author.getAuthorMail();
 	}
 
 	public void setAuthorMail(String authorMail) {
-		this.authorMail = authorMail;
+		this.author.setAuthorMail(authorMail);
 	}
 
 	public String toXml() {
-		String autor = tag("author", tag("name", authorName) + tag("mail", authorMail));
+		String autor = tag("author", tag("name", author.getAuthorName()) + tag("mail", author.getAuthorMail()));
 
 		String book = tag("book", tag("title", title) + tag("isbn", isbn) + tag("price", price) + autor);
 		return book;
