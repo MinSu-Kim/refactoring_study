@@ -1,7 +1,6 @@
 package refactoring_study.extract_superclass;
 
-public class Video extends Media {
-	
+public class Video extends Media{
 	public Video(String data) {
 		this.data = data;
 	}
