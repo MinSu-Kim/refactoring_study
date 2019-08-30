@@ -1,22 +1,18 @@
 package refactoring_study.replace_type_code_with_class;
 
 public class Item {
-	public static final int TYPECODE_BOOK = 0;
-	public static final int TYPECODE_DVD = 1;
-	public static final int TYPECODE_SOFTWARE = 2;
-
-	private final int typecode;
+	private ItemType itemType;
 	private final String title;
 	private final int price;
 
-	public Item(int typecode, String title, int price) {
-		this.typecode = typecode;
+	public Item(ItemType typecode, String title, int price) {
+		this.itemType = typecode;
 		this.title = title;
 		this.price = price;
 	}
 
-	public int getTypecode() {
-		return typecode;
+	public ItemType getTypecode() {
+		return itemType;
 	}
 
 	public String getTitle() {
@@ -29,6 +25,6 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return String.format("[%s, %s, %s]", typecode, title, price);
+		return String.format("[%s, %s, %s]", itemType.getTypeCode(), title, price);
 	}
 }
