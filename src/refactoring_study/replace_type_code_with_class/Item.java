@@ -25,6 +25,6 @@ public class Item {
 
 	@Override
 	public String toString() {
-		return String.format("[%s, %s, %s]", itemType.getTypeCode(), title, price);
+		return String.format("[%s, %s, %s]", itemType.ordinal(), title, price);
 	}
 }
