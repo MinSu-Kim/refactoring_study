@@ -5,7 +5,7 @@
     project="refactoring_study" 
     file="/refactoring_study/src/refactoring_study/replace_constructor_with_factory_method/main/Main.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="107" y="126"/>    
+    <position height="-1" width="-1" x="101" y="126"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -16,7 +16,7 @@
     project="refactoring_study" 
     file="/refactoring_study/src/refactoring_study/replace_constructor_with_factory_method/ShapeFactoryProvider.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="384" y="127"/>    
+    <position height="-1" width="-1" x="378" y="126"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -27,7 +27,7 @@
     project="refactoring_study" 
     file="/refactoring_study/src/refactoring_study/replace_constructor_with_factory_method/Shape.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="738" y="126"/>    
+    <position height="-1" width="-1" x="757" y="126"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -38,7 +38,7 @@
     project="refactoring_study" 
     file="/refactoring_study/src/refactoring_study/replace_constructor_with_factory_method/ShapeLine.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="460" y="449"/>    
+    <position height="-1" width="-1" x="494" y="443"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -49,7 +49,7 @@
     project="refactoring_study" 
     file="/refactoring_study/src/refactoring_study/replace_constructor_with_factory_method/ShapeOval.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="890" y="442"/>    
+    <position height="-1" width="-1" x="845" y="443"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -60,7 +60,7 @@
     project="refactoring_study" 
     file="/refactoring_study/src/refactoring_study/replace_constructor_with_factory_method/ShapeRectangle.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1114" y="451"/>    
+    <position height="-1" width="-1" x="1027" y="443"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -71,7 +71,7 @@
     project="refactoring_study" 
     file="/refactoring_study/src/refactoring_study/replace_constructor_with_factory_method/ShapeTriangle.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="668" y="445"/>    
+    <position height="-1" width="-1" x="668" y="443"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -82,7 +82,7 @@
     project="refactoring_study" 
     file="/refactoring_study/src/refactoring_study/replace_constructor_with_factory_method/ShapeType.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="386" y="288"/>    
+    <position height="-1" width="-1" x="378" y="288"/>    
     <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
